@@ -1,0 +1,13 @@
+import fs from 'node:fs/promises';
+const root=new URL('../',import.meta.url),dist=new URL('../dist/',import.meta.url);
+await fs.mkdir(dist,{recursive:true});
+for(const file of ['index.html','style.css','app.mjs','vault.enc.json'])await fs.copyFile(new URL(file,root),new URL(file,dist));
+await fs.cp(new URL('src/',root),new URL('src/',dist),{recursive:true});
+await fs.mkdir(new URL('vendor/',dist),{recursive:true});
+await fs.copyFile(new URL('../node_modules/exceljs/dist/exceljs.min.js',import.meta.url),new URL('vendor/exceljs.min.js',dist));
+await fs.copyFile(new URL('../node_modules/exceljs/LICENSE',import.meta.url),new URL('vendor/exceljs-LICENSE.txt',dist));
+for(const f of ['pdf.mjs','pdf.worker.mjs'])await fs.copyFile(new URL('../node_modules/pdfjs-dist/build/'+f,import.meta.url),new URL('vendor/'+f,dist));
+await fs.copyFile(new URL('../node_modules/pdfjs-dist/LICENSE',import.meta.url),new URL('vendor/pdfjs-LICENSE.txt',dist));
+await fs.copyFile(new URL('../data/odores_157.json',import.meta.url),new URL('odores_157.json',dist));
+await fs.writeFile(new URL('.nojekyll',dist),'');
+console.log('Build web concluído em dist. Sem inventário ou credenciais em texto aberto.');
