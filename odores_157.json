@@ -1,0 +1,3002 @@
+{
+  "version": 1,
+  "families": [
+    "Amadeirado",
+    "Ambarado",
+    "Almiscarado",
+    "Floral",
+    "Gourmand",
+    "Verde",
+    "Cítrico",
+    "Aquático",
+    "Aromático",
+    "Frutado",
+    "Especiado",
+    "Terroso"
+  ],
+  "odors": [
+    {
+      "id": 1,
+      "name": "madeira recém-cortada",
+      "primaryFamily": "Amadeirado",
+      "weights": {
+        "Amadeirado": 3.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 2,
+      "name": "lápis apontado",
+      "primaryFamily": "Amadeirado",
+      "weights": {
+        "Amadeirado": 3.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 3,
+      "name": "móvel de madeira encerada",
+      "primaryFamily": "Amadeirado",
+      "weights": {
+        "Amadeirado": 3.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 4,
+      "name": "serragem",
+      "primaryFamily": "Amadeirado",
+      "weights": {
+        "Amadeirado": 3.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 5,
+      "name": "cedro de armário",
+      "primaryFamily": "Amadeirado",
+      "weights": {
+        "Amadeirado": 3.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 6,
+      "name": "sândalo cremoso",
+      "primaryFamily": "Amadeirado",
+      "weights": {
+        "Amadeirado": 3.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 7,
+      "name": "lenha seca",
+      "primaryFamily": "Amadeirado",
+      "weights": {
+        "Amadeirado": 3.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 8,
+      "name": "casca de árvore",
+      "primaryFamily": "Amadeirado",
+      "weights": {
+        "Amadeirado": 3.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 9,
+      "name": "madeira molhada",
+      "primaryFamily": "Amadeirado",
+      "weights": {
+        "Amadeirado": 3.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 1.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 1.0
+      }
+    },
+    {
+      "id": 10,
+      "name": "madeira queimada",
+      "primaryFamily": "Amadeirado",
+      "weights": {
+        "Amadeirado": 3.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 11,
+      "name": "carvalho",
+      "primaryFamily": "Amadeirado",
+      "weights": {
+        "Amadeirado": 3.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 12,
+      "name": "pinho de floresta",
+      "primaryFamily": "Amadeirado",
+      "weights": {
+        "Amadeirado": 3.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 1.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 1.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 13,
+      "name": "baú de madeira",
+      "primaryFamily": "Amadeirado",
+      "weights": {
+        "Amadeirado": 3.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 14,
+      "name": "papel antigo",
+      "primaryFamily": "Amadeirado",
+      "weights": {
+        "Amadeirado": 3.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 15,
+      "name": "violão de madeira",
+      "primaryFamily": "Amadeirado",
+      "weights": {
+        "Amadeirado": 3.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 16,
+      "name": "incenso suave",
+      "primaryFamily": "Ambarado",
+      "weights": {
+        "Amadeirado": 1.0,
+        "Ambarado": 3.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 1.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 17,
+      "name": "resina aquecida",
+      "primaryFamily": "Ambarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 3.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 18,
+      "name": "baunilha com madeira",
+      "primaryFamily": "Ambarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 3.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 19,
+      "name": "âmbar quente",
+      "primaryFamily": "Ambarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 3.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 20,
+      "name": "vela perfumada quente",
+      "primaryFamily": "Ambarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 3.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 21,
+      "name": "loja de incensos",
+      "primaryFamily": "Ambarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 3.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 22,
+      "name": "benjoim adocicado",
+      "primaryFamily": "Ambarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 3.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 23,
+      "name": "mirra",
+      "primaryFamily": "Ambarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 3.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 24,
+      "name": "igreja com incenso",
+      "primaryFamily": "Ambarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 3.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 25,
+      "name": "madeira com mel",
+      "primaryFamily": "Ambarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 3.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 26,
+      "name": "perfume oriental doce",
+      "primaryFamily": "Ambarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 3.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 27,
+      "name": "resina de pinheiro",
+      "primaryFamily": "Ambarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 3.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 28,
+      "name": "bálsamo doce",
+      "primaryFamily": "Ambarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 3.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 29,
+      "name": "sabonete branco",
+      "primaryFamily": "Almiscarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 3.0,
+        "Floral": 1.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 30,
+      "name": "roupa recém-lavada",
+      "primaryFamily": "Almiscarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 3.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 31,
+      "name": "lençol limpo",
+      "primaryFamily": "Almiscarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 3.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 32,
+      "name": "pele após banho",
+      "primaryFamily": "Almiscarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 1.0,
+        "Almiscarado": 3.0,
+        "Floral": 1.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 33,
+      "name": "talco de bebê",
+      "primaryFamily": "Almiscarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 3.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 34,
+      "name": "algodão limpo",
+      "primaryFamily": "Almiscarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 3.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 35,
+      "name": "amaciante suave",
+      "primaryFamily": "Almiscarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 3.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 36,
+      "name": "creme hidratante neutro",
+      "primaryFamily": "Almiscarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 3.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 37,
+      "name": "camisa passada",
+      "primaryFamily": "Almiscarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 3.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 38,
+      "name": "toalha recém-lavada",
+      "primaryFamily": "Almiscarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 3.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 39,
+      "name": "sabonete cremoso",
+      "primaryFamily": "Almiscarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 3.0,
+        "Floral": 1.0,
+        "Gourmand": 1.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 40,
+      "name": "perfume cheiro de limpeza",
+      "primaryFamily": "Almiscarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 3.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 41,
+      "name": "travesseiro limpo",
+      "primaryFamily": "Almiscarado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 3.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 42,
+      "name": "rosa fresca",
+      "primaryFamily": "Floral",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 3.0,
+        "Gourmand": 0.0,
+        "Verde": 1.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 43,
+      "name": "jasmim à noite",
+      "primaryFamily": "Floral",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 1.0,
+        "Almiscarado": 0.0,
+        "Floral": 3.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 44,
+      "name": "lavanda florida",
+      "primaryFamily": "Floral",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 1.0,
+        "Floral": 3.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 1.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 45,
+      "name": "flor de laranjeira",
+      "primaryFamily": "Floral",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 3.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 46,
+      "name": "lírio",
+      "primaryFamily": "Floral",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 3.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 47,
+      "name": "violeta",
+      "primaryFamily": "Floral",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 3.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 48,
+      "name": "gardênia",
+      "primaryFamily": "Floral",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 3.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 49,
+      "name": "flor de cerejeira",
+      "primaryFamily": "Floral",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 3.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 50,
+      "name": "buquê de flores",
+      "primaryFamily": "Floral",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 3.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 51,
+      "name": "flores brancas",
+      "primaryFamily": "Floral",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 3.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 52,
+      "name": "hibisco",
+      "primaryFamily": "Floral",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 3.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 53,
+      "name": "gerânio",
+      "primaryFamily": "Floral",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 3.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 54,
+      "name": "magnólia",
+      "primaryFamily": "Floral",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 3.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 55,
+      "name": "flor de maracujá",
+      "primaryFamily": "Floral",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 3.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 56,
+      "name": "café passado",
+      "primaryFamily": "Gourmand",
+      "weights": {
+        "Amadeirado": 1.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 3.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 57,
+      "name": "café torrado",
+      "primaryFamily": "Gourmand",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 3.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 58,
+      "name": "chocolate amargo",
+      "primaryFamily": "Gourmand",
+      "weights": {
+        "Amadeirado": 1.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 3.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 1.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 59,
+      "name": "chocolate ao leite",
+      "primaryFamily": "Gourmand",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 3.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 60,
+      "name": "caramelo",
+      "primaryFamily": "Gourmand",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 1.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 3.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 61,
+      "name": "baunilha doce",
+      "primaryFamily": "Gourmand",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 1.0,
+        "Almiscarado": 1.0,
+        "Floral": 0.0,
+        "Gourmand": 3.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 62,
+      "name": "bolo saindo do forno",
+      "primaryFamily": "Gourmand",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 3.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 63,
+      "name": "biscoito amanteigado",
+      "primaryFamily": "Gourmand",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 3.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 64,
+      "name": "leite condensado",
+      "primaryFamily": "Gourmand",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 3.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 65,
+      "name": "mel",
+      "primaryFamily": "Gourmand",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 3.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 66,
+      "name": "doce de leite",
+      "primaryFamily": "Gourmand",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 3.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 67,
+      "name": "canela com açúcar",
+      "primaryFamily": "Gourmand",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 3.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 68,
+      "name": "pipoca doce",
+      "primaryFamily": "Gourmand",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 3.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 69,
+      "name": "avelã torrada",
+      "primaryFamily": "Gourmand",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 3.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 70,
+      "name": "pão doce",
+      "primaryFamily": "Gourmand",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 3.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 71,
+      "name": "capim recém-cortado",
+      "primaryFamily": "Verde",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 3.0,
+        "Cítrico": 1.0,
+        "Aquático": 0.0,
+        "Aromático": 1.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 72,
+      "name": "folhas amassadas",
+      "primaryFamily": "Verde",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 3.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 73,
+      "name": "grama molhada",
+      "primaryFamily": "Verde",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 3.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 74,
+      "name": "hortelã fresca",
+      "primaryFamily": "Verde",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 3.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 75,
+      "name": "manjericão",
+      "primaryFamily": "Verde",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 3.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 76,
+      "name": "chá verde",
+      "primaryFamily": "Verde",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 3.0,
+        "Cítrico": 1.0,
+        "Aquático": 0.0,
+        "Aromático": 1.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 77,
+      "name": "folhas de figueira",
+      "primaryFamily": "Verde",
+      "weights": {
+        "Amadeirado": 1.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 3.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 78,
+      "name": "jardim após rega",
+      "primaryFamily": "Verde",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 3.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 79,
+      "name": "caule verde cortado",
+      "primaryFamily": "Verde",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 3.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 80,
+      "name": "folhas de tomateiro",
+      "primaryFamily": "Verde",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 3.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 81,
+      "name": "salsa fresca",
+      "primaryFamily": "Verde",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 3.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 82,
+      "name": "bambu",
+      "primaryFamily": "Verde",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 3.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 83,
+      "name": "erva-cidreira",
+      "primaryFamily": "Verde",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 3.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 84,
+      "name": "folha de eucalipto",
+      "primaryFamily": "Verde",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 3.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 85,
+      "name": "limão espremido",
+      "primaryFamily": "Cítrico",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 3.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 86,
+      "name": "casca de laranja",
+      "primaryFamily": "Cítrico",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 3.0,
+        "Aquático": 0.0,
+        "Aromático": 1.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 87,
+      "name": "tangerina descascada",
+      "primaryFamily": "Cítrico",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 3.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 88,
+      "name": "toranja",
+      "primaryFamily": "Cítrico",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 3.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 89,
+      "name": "limonada gelada",
+      "primaryFamily": "Cítrico",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 3.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 90,
+      "name": "raspas de limão",
+      "primaryFamily": "Cítrico",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 3.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 91,
+      "name": "bergamota",
+      "primaryFamily": "Cítrico",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 3.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 92,
+      "name": "laranja amarga",
+      "primaryFamily": "Cítrico",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 3.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 93,
+      "name": "casca de lima",
+      "primaryFamily": "Cítrico",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 3.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 94,
+      "name": "chá com limão",
+      "primaryFamily": "Cítrico",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 3.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 95,
+      "name": "laranja doce",
+      "primaryFamily": "Cítrico",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 3.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 96,
+      "name": "cidra fresca",
+      "primaryFamily": "Cítrico",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 3.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 97,
+      "name": "cheiro de chuva",
+      "primaryFamily": "Aquático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 1.0,
+        "Cítrico": 0.0,
+        "Aquático": 3.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 1.0
+      }
+    },
+    {
+      "id": 98,
+      "name": "brisa do mar",
+      "primaryFamily": "Aquático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 1.0,
+        "Aquático": 3.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 99,
+      "name": "ar depois da tempestade",
+      "primaryFamily": "Aquático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 3.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 100,
+      "name": "roupa secando ao vento",
+      "primaryFamily": "Aquático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 3.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 101,
+      "name": "cachoeira",
+      "primaryFamily": "Aquático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 3.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 102,
+      "name": "rio de água limpa",
+      "primaryFamily": "Aquático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 3.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 103,
+      "name": "praia ao amanhecer",
+      "primaryFamily": "Aquático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 3.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 104,
+      "name": "névoa fria",
+      "primaryFamily": "Aquático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 3.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 105,
+      "name": "orvalho da manhã",
+      "primaryFamily": "Aquático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 3.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 106,
+      "name": "ar úmido de floresta",
+      "primaryFamily": "Aquático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 3.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 107,
+      "name": "água de coco fresca",
+      "primaryFamily": "Aquático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 3.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 108,
+      "name": "vento salgado",
+      "primaryFamily": "Aquático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 3.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 109,
+      "name": "alecrim",
+      "primaryFamily": "Aromático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 3.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 110,
+      "name": "lavanda de sachê",
+      "primaryFamily": "Aromático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 3.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 111,
+      "name": "tomilho",
+      "primaryFamily": "Aromático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 3.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 112,
+      "name": "sálvia",
+      "primaryFamily": "Aromático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 3.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 113,
+      "name": "chá de camomila",
+      "primaryFamily": "Aromático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 3.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 114,
+      "name": "chá de hortelã",
+      "primaryFamily": "Aromático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 3.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 115,
+      "name": "erva-doce",
+      "primaryFamily": "Aromático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 3.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 116,
+      "name": "eucalipto",
+      "primaryFamily": "Aromático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 3.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 117,
+      "name": "chá preto",
+      "primaryFamily": "Aromático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 3.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 118,
+      "name": "erva-mate",
+      "primaryFamily": "Aromático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 3.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 119,
+      "name": "louro fresco",
+      "primaryFamily": "Aromático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 3.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 120,
+      "name": "chá de capim-limão",
+      "primaryFamily": "Aromático",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 3.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 121,
+      "name": "morango maduro",
+      "primaryFamily": "Frutado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 3.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 122,
+      "name": "pêssego",
+      "primaryFamily": "Frutado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 3.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 123,
+      "name": "maçã verde",
+      "primaryFamily": "Frutado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 3.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 124,
+      "name": "pera suculenta",
+      "primaryFamily": "Frutado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 3.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 125,
+      "name": "abacaxi",
+      "primaryFamily": "Frutado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 3.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 126,
+      "name": "manga madura",
+      "primaryFamily": "Frutado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 3.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 127,
+      "name": "framboesa",
+      "primaryFamily": "Frutado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 3.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 128,
+      "name": "cereja",
+      "primaryFamily": "Frutado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 3.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 129,
+      "name": "ameixa",
+      "primaryFamily": "Frutado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 3.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 130,
+      "name": "melancia",
+      "primaryFamily": "Frutado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 3.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 131,
+      "name": "coco fresco",
+      "primaryFamily": "Frutado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 3.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 132,
+      "name": "uva madura",
+      "primaryFamily": "Frutado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 3.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 133,
+      "name": "maracujá",
+      "primaryFamily": "Frutado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 3.0,
+        "Especiado": 0.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 134,
+      "name": "pimenta-do-reino",
+      "primaryFamily": "Especiado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 3.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 135,
+      "name": "cravo-da-índia",
+      "primaryFamily": "Especiado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 3.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 136,
+      "name": "canela em pau",
+      "primaryFamily": "Especiado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 3.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 137,
+      "name": "cardamomo",
+      "primaryFamily": "Especiado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 3.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 138,
+      "name": "gengibre fresco",
+      "primaryFamily": "Especiado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 3.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 139,
+      "name": "noz-moscada",
+      "primaryFamily": "Especiado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 3.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 140,
+      "name": "anis-estrelado",
+      "primaryFamily": "Especiado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 3.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 141,
+      "name": "pimenta rosa",
+      "primaryFamily": "Especiado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 3.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 142,
+      "name": "açafrão",
+      "primaryFamily": "Especiado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 3.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 143,
+      "name": "cominho",
+      "primaryFamily": "Especiado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 3.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 144,
+      "name": "chá de especiarias",
+      "primaryFamily": "Especiado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 3.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 145,
+      "name": "pimenta vermelha",
+      "primaryFamily": "Especiado",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 3.0,
+        "Terroso": 0.0
+      }
+    },
+    {
+      "id": 146,
+      "name": "terra molhada",
+      "primaryFamily": "Terroso",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 1.0,
+        "Cítrico": 0.0,
+        "Aquático": 1.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 3.0
+      }
+    },
+    {
+      "id": 147,
+      "name": "floresta úmida",
+      "primaryFamily": "Terroso",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 3.0
+      }
+    },
+    {
+      "id": 148,
+      "name": "musgo de árvore",
+      "primaryFamily": "Terroso",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 3.0
+      }
+    },
+    {
+      "id": 149,
+      "name": "cogumelos frescos",
+      "primaryFamily": "Terroso",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 3.0
+      }
+    },
+    {
+      "id": 150,
+      "name": "barro depois da chuva",
+      "primaryFamily": "Terroso",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 3.0
+      }
+    },
+    {
+      "id": 151,
+      "name": "folhas secas no chão",
+      "primaryFamily": "Terroso",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 3.0
+      }
+    },
+    {
+      "id": 152,
+      "name": "raízes de plantas",
+      "primaryFamily": "Terroso",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 3.0
+      }
+    },
+    {
+      "id": 153,
+      "name": "terra de vaso",
+      "primaryFamily": "Terroso",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 3.0
+      }
+    },
+    {
+      "id": 154,
+      "name": "porão antigo",
+      "primaryFamily": "Terroso",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 3.0
+      }
+    },
+    {
+      "id": 155,
+      "name": "trilha de mata",
+      "primaryFamily": "Terroso",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 3.0
+      }
+    },
+    {
+      "id": 156,
+      "name": "pedra molhada",
+      "primaryFamily": "Terroso",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 3.0
+      }
+    },
+    {
+      "id": 157,
+      "name": "húmus de jardim",
+      "primaryFamily": "Terroso",
+      "weights": {
+        "Amadeirado": 0.0,
+        "Ambarado": 0.0,
+        "Almiscarado": 0.0,
+        "Floral": 0.0,
+        "Gourmand": 0.0,
+        "Verde": 0.0,
+        "Cítrico": 0.0,
+        "Aquático": 0.0,
+        "Aromático": 0.0,
+        "Frutado": 0.0,
+        "Especiado": 0.0,
+        "Terroso": 3.0
+      }
+    }
+  ]
+}
