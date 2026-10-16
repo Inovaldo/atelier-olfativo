@@ -1,0 +1,13 @@
+# Validação — 15/10/2026
+
+Aplicação web independente publicada em https://inovaldo.github.io/atelier-olfativo/. GitHub Pages confirmou build concluído, origem gh-pages, commit 28339f87349a14c44e20527f6605b5b96f3e8f12. O aplicativo de clientes não foi republicado nem alterado.
+
+17 testes Node passaram. Cobrem leitura de perfil, nota zero e neutralidade, modo rápido, ausência de dados, conflitos com desconhecidos, CSV, tabela PDF, limites de fórmulas, balanço de massa 50/100 g, três variações distintas, estoque, cotações ausentes, perdas/despesas, Ambroxan solução 10%, geração e reabertura XLSX, senha incorreta e adulteração do cofre. Após o ajuste final de formatação, o teste específico de XLSX passou novamente.
+
+Conferência no navegador desktop: autenticação, importação de JSON fictício no formato do aplicativo de clientes, seis propostas, download real e reabertura do Excel, leitura de PDF realmente gerado pelo aplicativo Flutter, edição de densidade e persistência cifrada após bloquear e entrar novamente. A premissa temporária de teste foi restaurada. Na página publicada, a senha incorreta foi rejeitada e a senha correta abriu a área do inventário. Captura da tela pública de entrada salva localmente.
+
+Excel de demonstração criado com perfil explicitamente fictício e inventário real apenas no ambiente local. Possui dez abas: resumo, premissas, inventário, seis propostas e compras. Fórmulas recalculadas com Artifact Tool, sem erros de fórmula encontrados; alterar embalagem para teste aumentou o custo correspondente no mesmo valor e a entrada foi restaurada antes de exportar. Foram renderizadas as dez abas e inspecionados valores e fórmulas do arquivo exportado. O aplicativo também gera seu próprio XLSX com ExcelJS, validado por download e reabertura com dez abas e custos coerentes.
+
+Dados privados, credenciais e Excel não são rastreados pelo Git. O cofre publicado usa AES-256-GCM / PBKDF2-SHA256, 600.000 iterações. A página pública contém apenas o programa genérico, catálogo público e cofre cifrado. Testes públicos usam lotes e preços sintéticos.
+
+Não foram realizados testes em aparelho iPhone/Safari, avaliação olfativa, estabilidade, segurança de uso na pele ou certificação IFRA. Não há dados de densidade no inventário original: os custos indicam estimativa provisória com 1 g/mL onde ausente. Aquisições não cotadas mantêm custo total pendente. Embalagem e mão de obra precisam ser informadas para inclusão no custo. Não há sincronização ou autenticação em servidor. A afinidade e a eventual melhora das aquisições exigem confirmação sensorial com o cliente.
