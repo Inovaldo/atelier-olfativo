@@ -18,6 +18,15 @@ const number = value => {
   return n;
 };
 const coconut = k => /^(aldeido c ?18(?: coco)?|gamma nonalactone|gama nonalactona)$/.test(k);
+// Editorial bench ceilings, not certified safety limits or assumed purities.
+const NEW_PROFILES={
+ 'cinamato de metila':{weights:{Especiado:.6,Gourmand:.25,Ambarado:.15},cap:.5},
+ 'eugenol':{weights:{Especiado:.85,Aromático:.15},cap:.3},
+ 'vertofix':{weights:{Amadeirado:.65,Terroso:.2,Ambarado:.15},cap:3},
+ 'habanolide':{weights:{Almiscarado:.95,Amadeirado:.05},cap:8},
+ 'galaxolide':{weights:{Almiscarado:.85,Floral:.15},cap:10},
+ 'helional':{weights:{Aquático:.6,Floral:.25,Verde:.15},cap:4}
+};
 const inferredWeights = description => {
   const s=normalize(description),weights={};
   const patterns=[/amadeir|madeira/,/ambar|oriental|resinos/,/almiscar|musk/,/floral|flor /,/gourmand|lacton|coco|baunilha|doce/,/verde/,/citric/,/aquatic|marinh|ozonic/,/aromatic|lavanda/,/frutad|frutal/,/especiad/,/terros|musgo/];
@@ -30,22 +39,26 @@ export function prepareInventory(rows,{source='Planilha importada',headers=[]}={
   return rows.filter(r=>text(r[0])).map((raw,i)=>{
     const r=raw.map(text),name=r[0],key=materialKey(name);
     if(seen.has(key))throw Error('Ingrediente duplicado: '+name);seen.add(key);
-    const match=r[1]?.match(/^(\d+(?:[.,]\d+)?)\s*(ml|g|kg|l)$/i);
+    const match=r[1]?.match(/^(\d+(?:[.,]\d+)?)\s*(ml|gr|g|kg|l)$/i);
     if(!match)throw Error('Quantidade ou unidade inválida: '+name);
-    const unit=match[2].toLowerCase(),quantity=Number(match[1].replace(',','.'))*(unit==='kg'||unit==='l'?1000:1),price=number(raw[2]);
+    const unit=match[2].toLowerCase().replace(/^gr$/,'g'),quantity=Number(match[1].replace(',','.'))*(unit==='kg'||unit==='l'?1000:1),price=number(raw[2]);
     const old=legacy([[name,quantity+' '+(unit==='l'?'ml':unit==='kg'?'g':unit),price??0,...r.slice(3)]])[0];
     let weights=old.weights,cap=old.cap,enabled=old.enabled,kind='aromático',reviewReason='';
     const description=[r[3],r[4],r[5],r[6],r[13]].join(' ');
-    if(/^(base para perfume)$/.test(key))kind='veículo';
+    if(/^(base para perfume|base perfume com fixador floral)$/.test(key))kind='veículo';
     else if(/^(triacetina|dipropilenoglicol|dpg|alcool(?: de cereais| etilico)?|etanol)$/.test(key))kind='solvente';
-    else if(/^(base|fixador|essencia)\b/.test(key)||/aphermate|almiscar sintetico alta fixacao|bacdanol sandol/.test(key))kind='composição a confirmar';
+    else if(/base comercial|composicao desconhecida/.test(normalize(description))||/^(base|fixador|essencia)\b/.test(key)||/aphermate|almiscar sintetico alta fixacao|bacdanol sandol/.test(key))kind='composição a confirmar';
     if(coconut(key)){
       weights={Gourmand:.65,Frutado:.35};cap=1;enabled=true;
       reviewReason='Perfil lactônico de coco. Teto editorial de bancada de 1%, não limite IFRA. Confirmar identidade, teor e ficha do lote.';
+    }else if(NEW_PROFILES[key]){
+      ({weights,cap}=NEW_PROFILES[key]);enabled=true;
+      reviewReason='Teto editorial de bancada, não limite IFRA. Confirmar identidade, teor e documentação do lote antes de produzir.';
     }else if(!Object.keys(weights).length){
       weights=inferredWeights(description);cap=0;enabled=false;
       reviewReason=kind==='veículo'||kind==='solvente'?'Material funcional, fora da seleção de notas.':'Perfil sugerido pela classificação; identidade e teto de bancada aguardam revisão.';
     }else if(!enabled)reviewReason='Identidade ou composição comercial a confirmar.';
+    if(key==='salicilato de metila')reviewReason='Fora da geração automática: requer avaliação toxicológica e documentação do lote.';
     return {...old,id:'inv-'+encodeURIComponent(key),name,quantity,price,weights,cap,enabled,kind,reviewReason,
       classification:r[4]||null,olfactoryMemory:r[6]||null,metadata:raw.map((value,j)=>({column:headers[j]||String(j+1),value:text(value)})),
       source:source+' / linha '+(raw.sourceRow??i+2),profileSource:coconut(key)?'https://chemical.kao.com/global/fragrances-and-aromas/products/gamma_nonalactone/':null};
@@ -54,7 +67,7 @@ export function prepareInventory(rows,{source='Planilha importada',headers=[]}={
 
 // Locate columns by header instead of silently truncating to fourteen cells.
 export function readInventoryWorkbook(wb,source='Inventário XLSX'){
-  const aliases=[['ingrediente','material','nome','materia prima'],['quantidade','quantidade comprada','quantidade lote','qtd'],['preco','preco r$','preco total','preco pago','valor','valor pago','custo'],['familia olfativa','familia','grupo olfativo'],['classificacao'],['classe de odores','classe de odor','descricao olfativa','descricao'],['lembranca olfativa'],['nota','nota olfativa','volatilidade'],[],[],[],[],['cuidado','cuidados','observacoes','restricoes'],['funcao','papel','funcao na formula']];
+  const aliases=[['ingrediente','material','nome','materia prima'],['quantidade','quantidade comprada','quantidade lote','qtd'],['preco','preco r$','preco total','preco pago','valor','valor pago','custo'],['familia olfativa','familia','grupo olfativo'],['classificacao','facetas secundarias'],['classe de odores','classe de odor','descricao olfativa','descricao'],['lembranca olfativa','evocacao memoria'],['nota','nota olfativa','volatilidade'],['intensidade duracao'],['uso tipico no concentrado'],['equivalencia perfume pronto'],['combina com'],['cuidado','cuidados','observacoes','restricoes'],['funcao','papel','funcao na formula']];
   const candidates=[];
   for(const sh of wb.worksheets){
     for(let n=1;n<=Math.min(sh.rowCount,30);n++){
@@ -77,11 +90,29 @@ export function readInventoryWorkbook(wb,source='Inventário XLSX'){
   }
   if(!rows.length||rows.length>3000)throw Error('Inventário vazio ou muito grande.');
   const extra=h.map((_,i)=>i).filter(i=>!columns.includes(i));
-  return prepareInventory(rows,{source:source+' / '+sh.name,headers:[...columns.map(i=>h[i]??''),...extra.map(i=>h[i])]});
+  const headers=[...columns.map(i=>h[i]??''),...extra.map(i=>h[i])];
+  const unique=[],seen=new Map(),duplicates=[];
+  for(const row of rows){
+    const key=materialKey(text(row[0]));
+    if(!seen.has(key)){seen.set(key,row);unique.push(row);continue;}
+    const previous=seen.get(key);
+    if(text(previous[1])!==text(row[1])||number(previous[2])!==number(row[2]))throw Error(`Duplicata com quantidades ou preços diferentes nas linhas ${previous.sourceRow} e ${row.sourceRow}: ${text(row[0])}. Separe os lotes por nomes distintos antes de importar.`);
+    duplicates.push({key,row,firstRow:previous.sourceRow});
+  }
+  const parsed=prepareInventory(unique,{source:source+' / '+sh.name,headers});
+  for(const d of duplicates){
+    const item=parsed.find(x=>materialKey(x.name)===d.key);
+    item.duplicateRows??=[];item.duplicateRows.push({sourceRow:d.row.sourceRow,metadata:d.row.map((value,j)=>({column:headers[j]||String(j+1),value:text(value)}))});
+    item.reviewReason+=(item.reviewReason?' ':'')+`Repetido nas linhas ${d.firstRow} e ${d.row.sourceRow}; quantidade e preço não somados. Confirmar se é um segundo lote.`;
+  }
+  parsed.importSummary={sourceRows:rows.length,distinct:parsed.length,duplicates:duplicates.length};
+  return parsed;
 }
 
 export function mergeInventory(existing,incoming){
-  const result=structuredClone(existing),positions=new Map(result.map((x,i)=>[materialKey(x.name),i]));
+  const purchaseKey=name=>materialKey(name).replace(/ identidade documentada$/, '');
+  const ownedKeys=new Set([...existing,...incoming].filter(x=>x.owned).map(x=>purchaseKey(x.name)));
+  const result=structuredClone(existing.filter(x=>x.owned||!ownedKeys.has(purchaseKey(x.name)))),positions=new Map(result.map((x,i)=>[materialKey(x.name),i]));
   let added=0,updated=0;
   for(const item of incoming){
     const i=positions.get(materialKey(item.name));
@@ -94,7 +125,7 @@ export function mergeInventory(existing,incoming){
     if(previous.kind==='veículo'||previous.kind==='solvente'){next.enabled=false;next.cap=0;}
     result[i]=next;updated++;
   }
-  for(const p of PURCHASES)if(!result.some(x=>x.id===p.id||materialKey(x.name)===materialKey(p.name)))result.push(structuredClone(p));
+  for(const p of PURCHASES)if(!ownedKeys.has(purchaseKey(p.name))&&!result.some(x=>x.id===p.id||materialKey(x.name)===materialKey(p.name)))result.push(structuredClone(p));
   return {inventory:result,added,updated,retained:existing.filter(x=>x.owned&&!incoming.some(y=>materialKey(x.name)===materialKey(y.name))).length};
 }
 

@@ -36,19 +36,19 @@ $('saveInventory').onclick=async()=>{try{const next=structuredClone(state.invent
 $('inventoryFile').onchange=async e=>{try{
  const file=e.target.files[0];if(!file)return;if(file.size>10e6)throw Error('Inventário deve ter até 10 MB.');
  const wb=new window.ExcelJS.Workbook();await wb.xlsx.load(await file.arrayBuffer());
- const parsed=readInventoryWorkbook(wb,file.name),merged=mergeInventory(state.inventory,parsed),counts=inventorySummary(merged.inventory);
- if(!confirm(`${parsed.length} materiais lidos: ${merged.added} novos, ${merged.updated} atualizados, ${merged.retained} anteriores preservados. Após combinar: ${counts.total} em estoque, ${counts.enabled} habilitados. Criar backup e atualizar?`))return;
+ const parsed=readInventoryWorkbook(wb,file.name),summary=parsed.importSummary,merged=mergeInventory(state.inventory,parsed),counts=inventorySummary(merged.inventory);
+ if(!confirm(`${summary.sourceRows} linhas lidas, ${parsed.length} materiais distintos (${summary.duplicates} repetição sinalizada): ${merged.added} novos, ${merged.updated} atualizados, ${merged.retained} anteriores preservados. Após combinar: ${counts.total} em estoque, ${counts.enabled} habilitados. Criar backup e atualizar?`))return;
  await pendingSave;
  const before=await seal(state,account,secret);
  localStorage.setItem(key+'-before-import',JSON.stringify(before));
  download(JSON.stringify(before),'atelier-cofre-antes-importacao.json','application/json');
- const next={...state,inventory:merged.inventory,lastImport:{file:file.name,count:parsed.length,at:new Date().toISOString(),added:merged.added,updated:merged.updated,retained:merged.retained}};
+ const next={...state,inventory:merged.inventory,lastImport:{file:file.name,count:parsed.length,sourceRows:summary.sourceRows,duplicates:summary.duplicates,at:new Date().toISOString(),added:merged.added,updated:merged.updated,retained:merged.retained}};
  const encrypted=await seal(next,account,secret);
  localStorage.setItem(key,JSON.stringify(encrypted));state=next;vault=encrypted;
  invalidate();renderInventory();status(`${parsed.length} materiais importados. Backup criptografado preservado.`);
  alert(`${parsed.length} materiais importados. ${counts.total} em estoque; ${counts.enabled} habilitados; ${counts.pending} pendentes; ${counts.functional} funcionais. Veja o motivo em cada linha.`);
  }catch(e){alert(e.message);}finally{e.target.value='';}};
-$('diagnostic').onclick=()=>{if(!state)return;const report={version:1,summary:inventorySummary(state.inventory),lastImport:state.lastImport??null,materials:state.inventory.map(x=>({name:x.name,kind:x.kind??'Revisar',enabled:x.enabled,cap:x.cap,family:x.family,weights:x.weights,reason:x.reviewReason??x.caution??null}))};download(JSON.stringify(report,null,2),'diagnostico-inventario-privado.json','application/json');};
+$('diagnostic').onclick=()=>{if(!state)return;const report={version:1,summary:inventorySummary(state.inventory),lastImport:state.lastImport??null,materials:state.inventory.map(x=>({name:x.name,kind:x.kind??'Revisar',enabled:x.enabled,cap:x.cap,family:x.family,quantity:x.quantity,unit:x.unit,price:x.price,metadata:x.metadata,duplicateRows:x.duplicateRows,weights:x.weights,reason:x.reviewReason??x.caution??null}))};download(JSON.stringify(report,null,2),'diagnostico-inventario-privado.json','application/json');};
 $('previousBackup').onclick=()=>{const saved=localStorage.getItem(key+'-before-import');if(saved)download(saved,'atelier-cofre-antes-importacao.json','application/json');else alert('Nenhum backup anterior à importação neste navegador.');};
 const labels={concentration:'Dosagem dos materiais comerciais (%)',loss:'Perda de processo (%)',pack50:'Embalagem para 50 g (R$)',pack100:'Embalagem para 100 g (R$)',labor50:'Mão de obra / despesas para 50 g (R$)',labor100:'Mão de obra / despesas para 100 g (R$)'};
 function renderSettings(){ $('settingsForm').innerHTML=Object.entries(labels).map(([k,l])=>`<label>${safe(l)}<input type="number" id="setting-${k}" min="0" step="any" value="${state.settings[k]}" required></label>`).join('');}

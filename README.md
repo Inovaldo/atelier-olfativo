@@ -48,3 +48,14 @@ node tools/serve.mjs
 Primeiro provisionamento local: `python tools/prepare_private.py` lê a planilha no diretório pai e `node tools/provision.mjs` cria cofre cifrado e credenciais. O provisionador recusa sobrescrever cofre existente. Não publicar `private/`, relatórios, exemplos com inventário em claro, arquivos Excel ou senhas. `tools/sample.mjs` cria apenas exemplo explicitamente fictício para teste, usando o inventário privado local. O teste automatizado usa um inventário sintético mínimo, não depende do arquivo particular.
 
 Repositório independente: Inovaldo/atelier-olfativo. Código na branch main; build estático na gh-pages. O push de main não republica automaticamente a página: executar build e enviar `dist` para gh-pages. A planilha original, o cofre em claro e a senha nunca entram no Git. Não editar o aplicativo de clientes para publicar este programa.
+
+
+## Atualização do importador (1.1)
+
+A importação encontra a tabela por cabeçalhos, aceita g/gr, mL, kg e L, preserva metadados e distingue valores ausentes de zero. Linhas vazias formatadas não são materiais. Repetições com a mesma quantidade/preço são agrupadas, mantendo descrições e linhas de origem para revisão, sem somar o saldo; repetições com saldos divergentes interrompem a importação.
+
+O inventário é combinado por identidade normalizada. Materiais anteriores ausentes no XLSX, densidades, teores ativos, seleção e tetos personalizados são preservados. Uma cópia criptografada anterior à importação é salva localmente e oferecida para download antes da gravação. O resumo distingue estoque total, habilitados, funcionais, pendências e cotações; o diagnóstico é um download privado, sem transmissão para servidores.
+
+Perfis editoriais novos cobrem lactonas de coco, cinamato de metila, eugenol, Vertofix, Habanolide, Galaxolide e Helional. Os tetos são heurísticas de bancada, não limites IFRA. Teor comercial não é presumido. Materiais sem identidade suficiente recebem motivo explícito para exclusão automática. A classificação completa e as descrições acompanham o Excel exportado. Uma aquisição já presente no estoque não é sugerida novamente.
+
+Fontes de perfis: [Kao, gama-nonalactona](https://chemical.kao.com/global/fragrances-and-aromas/products/gamma_nonalactone/), [Symrise, cinamato de metila](https://www.symrise.com/fileadmin/symrise/Marketing/Scent_and_care/Aroma_molecules/Ingredient_finder/SYM_PC_Datenblaetter/SYM_PC-Methyl_Cinnamate.pdf), [IFF, Vertofix](https://www.iff.com/scent/ingredients-compendium/vertofix-coeur/), [IFF, Galaxolide](https://www.iff.com/scent/ingredients-compendium/galaxolide-undiluted/), [IFF, Helional](https://www.iff.com/scent/ingredients-compendium/helional/), [dsm-firmenich, Habanolide](https://studio.dsm-firmenich.com/product/habanolider-pe-947303). Identidade e documentação do lote continuam necessárias.

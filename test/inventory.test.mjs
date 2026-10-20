@@ -44,3 +44,23 @@ test('novos materiais participam do algoritmo; preferências mudam fórmulas',()
  assert.equal(sweet.length,6);assert.ok(sweet.some(f=>f.lines.some(l=>l.item.name==='Aldeído C-18 Côco'&&l.percent>0)));
  assert.notDeepEqual(sweet[0].lines,wood[0].lines);
 });
+
+test('repetição idêntica preserva ambas as descrições sem dobrar saldo; conflito é recusado',()=>{
+ const wb=new ExcelJS.Workbook(),sh=wb.addWorksheet('Inventário detalhado');
+ sh.addRow(['Ingrediente','Quantidade','Preço','Família principal','Facetas secundárias','Descrição olfativa detalhada','Evocação / memória']);
+ sh.addRow(['Bacdanol Sandol','1 ml',1,'Amadeirado','Sândalo','Primeira descrição','Memória A']);
+ sh.addRow(['Bacdanol Sandol','1 ml',1,'Amadeirado','Sândalo','Outra descrição','Memória B']);
+ const rows=readInventoryWorkbook(wb);
+ assert.equal(rows.length,1);assert.equal(rows.importSummary.sourceRows,2);assert.equal(rows.importSummary.duplicates,1);assert.equal(rows[0].quantity,1);
+ assert.equal(rows[0].description,'Primeira descrição');assert.equal(rows[0].olfactoryMemory,'Memória A');
+ assert.ok(rows[0].duplicateRows[0].metadata.some(x=>x.value==='Memória B'));
+ sh.getCell('B3').value='2 ml';assert.throws(()=>readInventoryWorkbook(wb),/Duplicata com quantidades/);
+});
+
+test('gr é convertido; aquisição já possuída deixa de ser sugerida',()=>{
+ const rows=prepareInventory([['Habanolide','2 gr',1],['Helional','3 ml',1]]);
+ assert.equal(rows[0].unit,'g');assert.equal(rows[0].quantity,2);assert.ok(rows.every(x=>x.enabled));
+ const merged=mergeInventory([],rows);
+ assert.equal(merged.inventory.filter(x=>/helional/i.test(x.name)).length,1);
+ assert.equal(merged.inventory.filter(x=>!x.owned).length,2);
+});
