@@ -97,6 +97,8 @@ function project(v,caps){if(caps.reduce((a,b)=>a+b,0)<1-1e-10)throw Error('Estoq
 export function generate(profile,inventory,settings={...DEFAULTS}){
   validateSettings(settings);profile=validateProfile(profile.scores,profile.source);
   const base=inventory.find(x=>normalize(x.name)==='base para perfume');if(!base)throw Error('Importe a Base para perfume no inventário.');
+  const purchaseKey=name=>normalize(name).replace(/\s*\(identidade documentada\)$/, '');
+  const purchases=PURCHASES.filter(p=>!inventory.some(i=>i.owned&&purchaseKey(i.name)===purchaseKey(p.name)));
   const prefs=FAMILIES.map(f=>profile.scores.find(x=>x.family===f));
   const signal=prefs.map(s=>s.score===null?0:Math.max(0,(s.score-45)/55)*(.3+.7*(s.confidence??.25)));
   const exploratory=signal.every(x=>x===0);if(exploratory)throw Error('Não há afinidades positivas suficientes. Peça mais avaliações ao cliente antes de formular.');
@@ -106,9 +108,9 @@ export function generate(profile,inventory,settings={...DEFAULTS}){
   for(const upgraded of [false,true])for(let variant=0;variant<3;variant++){
     const target=[...signal];if(variant===1){target[positive[0][1]]*=.7;target[support]*=1.5;}if(variant===2){target[positive[0][1]]*=.8;target[support]*=1.3;const next=positive[2]?.[1]??support;target[next]*=1.8;}
     const total=target.reduce((a,b)=>a+b,0);for(let i=0;i<target.length;i++)target[i]/=total;
-    const pool=inventory.filter(x=>x.enabled&&x.cap>0&&x.owned&&x.quantity>0).concat(upgraded?PURCHASES.filter(p=>!inventory.some(i=>normalize(i.name)===normalize(p.name))).map(p=>({...p,...(inventory.find(i=>i.id===p.id)??{})})):[]);
+    const pool=inventory.filter(x=>x.enabled&&x.cap>0&&x.owned&&x.quantity>0).concat(upgraded?purchases.filter(p=>!inventory.some(i=>normalize(i.name)===normalize(p.name))).map(p=>({...p,...(inventory.find(i=>i.id===p.id)??{})})):[]);
     // Purchases stored as editable quotations in the inventory retain owned=false.
-    if(upgraded)for(const p of PURCHASES){const edited=inventory.find(i=>i.id===p.id);if(edited&&!pool.some(i=>i.id===p.id))pool.push(edited);}
+    if(upgraded)for(const p of purchases){const edited=inventory.find(i=>i.id===p.id);if(edited&&!pool.some(i=>i.id===p.id))pool.push(edited);}
     const utility=x=>FAMILIES.reduce((a,f,i)=>a+(x.weights[f]??0)*(target[i]-(prefs[i].score!==null&&prefs[i].score<40?(40-prefs[i].score)/30:0)),0);
     pool.sort((a,b)=>utility(b)-utility(a)||a.id.localeCompare(b.id));
     const selected=[];let capTotal=0;for(const x of pool){if(selected.length<14||capTotal<1.05){selected.push(x);capTotal+=x.cap/100;}}
